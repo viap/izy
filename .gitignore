@@ -1,0 +1,11 @@
+/node_modules
+/WhiteHorse.sublime-workspace
+/WhiteHorse.sublime-project
+/build
+/*.sublime-project
+/*.sublime-workspace
+/nbproject
+/assets/css/screen.css
+/npm-debug.log
+/.sass-cache
+/assets/img/icons-*

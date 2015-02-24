@@ -1,0 +1,103 @@
+* {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+/* --------------------------------- DEMO: start -------------------------------------*/
+.header,
+.footer {
+  padding: 10px;
+  border: 1px solid #000000;
+  text-align: center;
+  background-color: #eeeeee;
+}
+.header {
+  margin: 0 0 20px 0;
+}
+.footer {
+  margin: 20px 0 0 0;
+}
+.page_content {
+  text-align: center;
+}
+/* --------------------------------- DEMO: end ---------------------------------------*/
+/* --------------------------------- SANDBOX: start ----------------------------------*/
+.sandbox-wrapper {
+  height: auto;
+  min-height: 100%;
+}
+.sandbox {
+  border-bottom: 1px solid black;
+  background: #E4F2FF;
+}
+.sandbox .sandbox-form {
+  z-index: 1000;
+  position: relative;
+  width: 600px;
+  text-align: left;
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 3px;
+  background-color: white;
+}
+.sandbox .sandbox-line {
+  margin: 0 0 5px 0;
+}
+.sandbox .sandbox-input-name {
+  width: 200px;
+  text-align: right;
+  margin: 0 5px 0 0;
+  font-weight: bold;
+  display: inline-block;
+}
+.sandbox input.sandbox-input-name {
+  width: 100px;
+  margin: 0 2px 0 92px;
+  padding: 2px 3px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.sandbox .sandbox-input {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.sandbox input.sandbox-input {
+  width: 293px;
+  padding: 2px 3px;
+  margin: 0 0 0 2px;
+}
+.sandbox .sandbox-submit {
+  width: 300px;
+  margin: 0 0 0 205px;
+  padding: 3px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 3px;
+}
+.sandbox .sandbox-submit:hover {
+  background-color: #fff;
+}
+.sandbox .sandbox-submit:active {
+  background-color: #ddd;
+}
+.sandbox .sandbox-params {
+  padding: 10px 0 5px 0;
+  margin: 0 0 5px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.sandbox .sandbox-params .sandbox-addparam {
+  margin: 0 0 0 206px;
+  border: 1px solid #ccc;
+  padding: 2px 3px;
+  border-radius: 3px;
+}
+.sandbox .sandbox-params .sandbox-addparam:hover {
+  background-color: #E5FFE7;
+}
+/* --------------------------------- SANDBOX: end ------------------------------------*/

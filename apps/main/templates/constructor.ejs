@@ -1,0 +1,91 @@
+<div class="constructor">
+	<div class="constructor-title">Конструктор модулей</div>
+	<form id="constructorForm" class="constructor-form">
+		<div class="constructor-form-line">
+			<label for="moduleName" class="constructor-form-input-name" >Название модуля</label>
+			<input id="moduleName" name="moduleName" value="" placeholder="Введите имя модуля" class="constructor-form-input" />
+		</div>
+		<div class="constructor-form-line">
+			<label for="modulePath" class="constructor-form-input-name">Папка модуля</label>
+			<select id="modulePath" name="modulePath" class="constructor-form-input"></select>
+		</div>
+		<div class="constructor-form-line">
+			<label for="moduleType" class="constructor-form-input-name">Тип модуля</label>
+			<select id="moduleType" name="moduleType" class="constructor-form-input">
+				<option name="Model">Single</option>
+				<option name="Collection">Collection</option>
+			</select>
+		</div>
+
+		<!--<div class="constructor-form-line">
+			<label for="modelType" class="constructor-form-input-name">Тип модели</label>
+			<select id="modelType" name="modelType" class="constructor-form-input">
+				<option name="Model">Model</option>
+				<option name="Collection">Collection</option>
+				<option name="Empty">Empty</option>
+			</select>
+		</div>
+		<div class="constructor-form-line">
+			<label for="viewType" class="constructor-form-input-name">Тип представления</label>
+			<select id="viewType" name="viewType" class="constructor-form-input">
+				<option name="View">View</option>
+				<option name="CollectionView">CollectionView</option>
+			</select>
+		</div>-->
+
+		<input type="submit" name="submit" value="Создать" class="constructor-form-submit"/>
+	</form>
+	<div class="constructor-message"></div>
+</div>
+<style>
+	.constructor{
+		width: 400px;
+		margin:0 auto;
+	}
+	.constructor-title{
+		text-align: center;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 1.25em;
+		margin: 10px 0;
+	}
+	.constructor-message{
+		text-align: center;
+		font-size: 12px;
+		font-weight: bold;
+		line-height: 1.25em;
+		margin: 10px 0;
+		color: blue;
+	}
+	.constructor-form{}
+	.constructor-form-line{
+		margin:0 0 3px 0;
+	}
+	.constructor-form-input{
+		width: 200px;
+		padding: 2px 3px;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+	}
+	input.constructor-form-input{
+		width: 192px;
+	}
+	.constructor-form-input-name{
+		width: 150px;
+		display: inline-block;
+		text-align: right;
+		margin: 0 5px 0 0;
+		font-weight: bold;
+	}
+	.constructor-form-submit{
+		margin: 5px 0 0 158px;
+		padding: 3px 10px;
+		font-weight: 700;
+		border: 1px solid #ccc;
+		background-color: #eee;
+		border-radius: 3px;
+	}
+	.constructor-form-submit:hover{
+		background-color: #fff;
+	}
+</style>

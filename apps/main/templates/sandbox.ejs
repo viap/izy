@@ -1,0 +1,28 @@
+<div class="sandbox-wrapper checkerboard">
+	<div class="sandbox">
+		<form id="sandboxForm" class="sandbox-form js-sandbox-form" name="sandboxForm" style="" >
+			<div class="sandbox-line">
+				<span class="sandbox-input-name" >Выберите модуль:</span>
+				<select id="moduleSelector" name="moduleSelector" class="sandbox-input js-sandbox-module-select">
+					<option value="0">Выберите элемент</option>
+					<% for(ind in modules){ %>
+						<option value="<%- modules[ind] %>"><%- modules[ind] %></option>
+					<% } %>
+				</select>
+			</div>
+
+			<!--&nbsp;
+			<span>Введите параметры:</span>
+			&nbsp;
+			<input type="text" name="params" value="" style="width:300px;"/>
+			-->
+			<div id="paramsBlock" class="sandbox-params hidden">
+				<input id="addParamButton" class="sandbox-addparam js-sandbox-addparam" type="button" name="addParam" value="+ Добавить параметр" />
+			</div>
+			<input id="submitBtn" class="sandbox-submit js-sandbox-show hidden" type="submit" name="create" value="Ok" style="width: 100px;"/>
+		</form>
+	</div>
+
+	<div data-region="content"></div>
+
+</div>
