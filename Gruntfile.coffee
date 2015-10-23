@@ -16,7 +16,7 @@ module.exports = (grunt) ->
 		browserify:
 			dist:
 				files:
-					'build/app.js' : ['app.js']
+					'build/app.js': ['app.js']
 				options:
 					browserifyOptions:
 						debug: true
