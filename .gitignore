@@ -9,3 +9,5 @@
 /npm-debug.log
 /.sass-cache
 /assets/img/icons-*
+/assets/css/*.css
+/.idea
