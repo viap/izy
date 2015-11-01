@@ -15,21 +15,17 @@ exports.isProduction = function() {
 
 if (exports.isProduction() === true) {
 	exports.server = {
-		url: 'http://beta-music-svoy.azurewebsites.net',
-		api: 'http://beta-music-svoy.azurewebsites.net',
-		apiTest2: 'http://dev.svoy.ru',
-		apiTest: 'http://private-39ce-svoy.apiary-mock.com',
+		url: '/',
+		api: '/',
 		workerPort: process.env.PORT
 	};
 } else {
 	exports.server = {
 		url: 'http://localhost:5000',
 		api: 'http://localhost:5000',
-		apiTest2: 'http://dev.svoy.ru',
-		apiTest: 'http://private-39ce-svoy.apiary-mock.com',
 		workerPort: 5000
 	};
 }
 
 exports.sessionCookieName = '__IZY_SESSION__';
-exports.anonymousCookieName = '__IZY_LABEL__';
+exports.anonymousCookieName = '__IZY_ANONYMOUS__';

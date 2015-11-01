@@ -20,7 +20,7 @@ class Utils
 				if i == params.length - 1
 					result = param || null;
 				else
-					result = decodeURIComponent(param) if param;
+					result = decodeURIComponent(param) if param
 				result
 
 	@correlateValuesAndNames: (path, values)->

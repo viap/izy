@@ -52,10 +52,10 @@ class CommonInit extends Object
 	initHandlers: (modules)->
 			# setup module's routes
 			Router.addHandler '/*path',							CommonInit.modules.MainApp,				'content',			CommonInit.modules.ShellApp
-			Router.addHandler '/*path2',						CommonInit.modules.ShellApp,			'shell_content',	CommonInit.modules.MainContentApp
+			Router.addHandler '/(?*q)',							CommonInit.modules.ShellApp,			'shell_content',	CommonInit.modules.MainContentApp
 			Router.addHandler '/page/:id/*path',				CommonInit.modules.ShellApp,			'shell_content',	CommonInit.modules.InnerPageApp
 			
-			#Router.addHandler '/errors/:id/*path',				CommonInit.modules.DefaultShellApp,		'content',			CommonInit.modules.ErrorPageApp
+			Router.addHandler '/errors/:id/*path',				CommonInit.modules.ShellApp,			'shell_content',	CommonInit.modules.ErrorPageApp
 			Router.addHandler '/sandbox/(?*q)',					CommonInit.modules.MainApp,				'content',			CommonInit.modules.SandboxApp
 			Router.addHandler '/constructor/(?*q)',				CommonInit.modules.MainApp,				'content',			CommonInit.modules.ConstructorApp
 

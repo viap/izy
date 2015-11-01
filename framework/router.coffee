@@ -367,7 +367,6 @@ class Router extends Event
 			else
 				result.notRender = true
 
-
 		return result
 
 	_renderBranch: (renderStart, callback)->
